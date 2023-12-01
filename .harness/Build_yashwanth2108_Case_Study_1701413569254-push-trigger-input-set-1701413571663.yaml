@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_yashwanth2108_Case_Study_1701413569254-push-trigger-input-set
+  identifier: Build_yashwanth2108_Case_Study_1701413569254pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_yashwanth2108_Case_Study_1701413569254
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
