@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_yashwanth2108_Case_Study_1707399202507
+  name: Build Case-Study
+  orgIdentifier: default
+  projectIdentifier: Demo1
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1701413525246
+        repoName: yashwanth2108/Case-Study
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
